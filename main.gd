@@ -11,9 +11,6 @@ func _ready():
 func _process(delta):
 	pass
 
-
-
-
 func game_over():
 	$ScoreTimer.stop()
 	$MobTimer.stop()
@@ -23,6 +20,7 @@ func new_game():
 	score = 0
 	$Player.start($StartPosition.position)
 	$StartTimer.start()
+
 
 
 func _on_score_timer_timeout():
